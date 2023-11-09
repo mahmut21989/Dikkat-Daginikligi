@@ -103,7 +103,25 @@ a{
     height: 72px;
     border-radius: 1.5rem;
 }
+.pages-phone-text{
+    background-color: #c7d9e2;
+    padding: 60px 0 0 0;
+}
+.pages-phone-text p{
+    font-size: 19px;
+    text-align: justify;
+}
 
+.phone-images img{
+    width: 100%;
+}
+.phone-images p{
+    width: 90%;
+}
+.secondry-section{
+   padding-top: 3rem;
+   background-color: rgb(212, 156, 116);
+}
 .page-text{
     position: absolute;
     color: wheat;
@@ -116,6 +134,26 @@ a{
 .page-text span{
     font-weight: bold;
 }
+
+.music-text img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+.music-text p{
+    font-size: 19px;
+    text-align: justify;
+}
+
+.pages-card{
+    padding: 5rem;
+    background-color: #badfdc;
+}
+.card-images img{
+    height: 18rem;
+}
+
+
 
 
 
