@@ -24,4 +24,10 @@ document.querySelectorAll(".nav-link").forEach(n=>n.
         audio.play();
     }) 
 
-    
+
+    let music=document.querySelector(".cards-button-one"),
+        mp3=document.querySelector(".card-one");
+        music.addEventListener("click", function(){
+          let audio=document.getElementById("card-one")
+          audio.play();
+        })
