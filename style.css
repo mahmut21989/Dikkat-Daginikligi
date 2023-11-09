@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #77A2AF;
+    opacity:0.7;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover{
+    color: blue;
+}
+/* hamburger bu kodu ekleyimnce yeni iletişim vs neden sağa kayıyor */
+.hamburger{ 
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.page-text{
+    padding-left:16px;
+    text-align: center;
+}
+.page-text h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 8rem;
+
+}
+.page-text p{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.8;
+}
+ /* ALT TARAF WEB EKRANIN CSS KISMI */
+
+ .page-video{
+    height: 100vh;
+    position: relative;
+ }
+ .webScreen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+.primary-text{
+    position: absolute;
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #737789;
+    opacity:0.7;
+    width: 241px;
+    height: 72px;
+    border-radius: 1.5rem;
+}
+
+.page-text{
+    position: absolute;
+    color: wheat;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -199%);
+}
+
+.page-text span{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* ALT TARAF RESPONSİV AYARLAMAK İÇİN MEDİA */
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active.bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active.bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+
+    }
+
+    .hamburger.active.bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #80B2B2;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        height: 100%;
+        justify-content: start;
+        
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+    .page-text{
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
