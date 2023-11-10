@@ -25,9 +25,20 @@ document.querySelectorAll(".nav-link").forEach(n=>n.
     }) 
 
 
-    let music=document.querySelector(".cards-button-one"),
+    let music=document.querySelectorAll(".cards-button-one"),
         mp3=document.querySelector(".cards-one");
-        music.addEventListener("click", function(){
+        music[0].addEventListener("click", function(){
           let audio=document.getElementById("card-one")
           audio.play();
         })
+        music[1].addEventListener("click", function(){
+          let card2=document.getElementById("card-two")
+          card2.play();
+        })
+        music[2].addEventListener("click", function(){
+          let card3=document.getElementById("card-three")
+          card3.play();
+        })
+       
+     
+       
