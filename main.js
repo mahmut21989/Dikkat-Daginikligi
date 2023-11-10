@@ -25,8 +25,8 @@ document.querySelectorAll(".nav-link").forEach(n=>n.
     }) 
 
 
-    let music=document.querySelectorAll(".cards-button-one"),
-        mp3=document.querySelector(".cards-one");
+    let music=document.querySelectorAll(".cards-button-one");
+        
         music[0].addEventListener("click", function(){
           let audio=document.getElementById("card-one")
           audio.play();
